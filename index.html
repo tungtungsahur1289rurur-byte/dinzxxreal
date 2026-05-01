@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ALL GB/CH DINZXX STORE | Pusat Link Grup WA & Saluran</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f7fb;
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, 'Roboto', sans-serif;
+            color: #1e2a3e;
+            line-height: 1.5;
+            padding: 2rem 1rem;
+        }
+
+        /* Container utama putih bersih */
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        /* Inner padding */
+        .content-padding {
+            padding: 2rem 1.8rem 2.5rem;
+        }
+
+        /* Header Toko */
+        .store-header {
+            text-align: center;
+            margin-bottom: 1.8rem;
+        }
+
+        .store-name {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #1a4d3e, #0b2b26);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-light {
+            display: inline-block;
+            background: #f0f4f2;
+            border-radius: 60px;
+            padding: 0.3rem 1.1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #2c5a4a;
+            letter-spacing: 0.3px;
+        }
+
+        .subhead {
+            margin-top: 0.7rem;
+            color: #5b6e7c;
+            font-size: 0.9rem;
+        }
+
+        /* Panel Owner (edit link) - stylish but clean */
+        .owner-panel {
+            background: #f9fbfa;
+            border-radius: 1.5rem;
+            padding: 1.2rem 1.3rem;
+            margin: 1.5rem 0 1.8rem 0;
+            border: 1px solid #e6ede9;
+            transition: all 0.2s;
+        }
+
+        .owner-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        .owner-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #2c6e5c;
+            background: #e5f0ec;
+            padding: 0.25rem 0.9rem;
+            border-radius: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-edit-btn {
+            background: white;
+            border: 1px solid #cddfd7;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #2c5a4a;
+        }
+
+        .toggle-edit-btn:hover {
+            background: #eef3f0;
+            border-color: #9bbfaf;
+        }
+
+        .edit-fields {
+            display: none;
+            margin-top: 1.2rem;
+            animation: fadeSlide 0.2s ease;
+        }
+
+        .edit-fields.show-edit {
+            display: block;
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(-6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #517a6a;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border: 1px solid #dce5e0;
+            border-radius: 1rem;
+            font-size: 0.85rem;
+            background: white;
+            transition: 0.2s;
+            font-family: monospace;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #2c9b7a;
+            box-shadow: 0 0 0 2px rgba(44, 155, 122, 0.2);
+        }
+
+        .save-link-btn {
+            background: #1e4e40;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.4rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 0.5rem;
+            width: 100%;
+        }
+
+        .save-link-btn:hover {
+            background: #0f3a2f;
+        }
+
+        /* Section Umum */
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin: 1.8rem 0 1.2rem 0;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #1a2e28;
+            border-left: 4px solid #2c9b7a;
+            padding-left: 0.9rem;
+        }
+
+        /* Kartu link grup / saluran */
+        .link-card {
+            background: #ffffff;
+            border: 1px solid #edf2ef;
+            border-radius: 1.3rem;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .link-card:hover {
+            border-color: #cddfd7;
+            background: #fefefc;
+        }
+
+        .link-info {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            flex: 2;
+            min-width: 170px;
+        }
+
+        .icon-bg {
+            width: 48px;
+            height: 48px;
+            background: #f5f9f7;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+        }
+
+        .link-detail h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        .link-detail p {
+            font-size: 0.7rem;
+            color: #6f8a7c;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .btn-join, .btn-follow {
+            background: transparent;
+            border: 1px solid #cbdcd3;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #2b4b3e;
+        }
+
+        .btn-join:hover {
+            background: #e0f0ea;
+            border-color: #25D366;
+            color: #075e54;
+        }
+
+        .btn-follow:hover {
+            background: #e2edff;
+            border-color: #0a7cff;
+            color: #0056b3;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            padding: 0.4rem 0.7rem;
+            border-radius: 40px;
+            color: #6f8e7e;
+            transition: 0.15s;
+        }
+
+        .copy-btn:hover {
+            background: #eef2ef;
+            color: #1e4e40;
+        }
+
+        /* footer */
+        .footer-note {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #9bb3a8;
+            border-top: 1px solid #edf2ef;
+            padding-top: 1.8rem;
+        }
+
+        /* Toast notification */
+        .toast-custom {
+            position: fixed;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%) scale(0.9);
+            background: #1e2e2a;
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 60px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.2s, transform 0.2s;
+            pointer-events: none;
+            z-index: 1100;
+            backdrop-filter: blur(10px);
+            background: #1e2e2ae6;
+            white-space: nowrap;
+            font-family: monospace;
+        }
+
+        .toast-custom.show {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+
+        @media (max-width: 620px) {
+            .content-padding {
+                padding: 1.5rem;
+            }
+            .link-card {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .action-buttons {
+                justify-content: flex-end;
+            }
+            .store-name {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content-padding">
+        <!-- Header Toko -->
+        <div class="store-header">
+            <div class="store-name">ALL GB/CH DINZXX STORE</div>
+            <div class="badge-light">✦ PREMIUM LINK CENTER ✦</div>
+            <div class="subhead">Kumpulan resmi grup WhatsApp & saluran update | Owner bisa ubah link kapan saja</div>
+        </div>
+
+        <!-- PANEL OWNER (bisa ubah link) dengan toggle -->
+        <div class="owner-panel">
+            <div class="owner-header" id="toggleOwnerHeader">
+                <span class="owner-title">🔐 Panel Owner / Admin</span>
+                <button class="toggle-edit-btn" id="toggleEditBtn">✏️ Ubah Link</button>
+            </div>
+            <div id="editFieldsContainer" class="edit-fields">
+                <div class="input-group">
+                    <label>🔗 Link Grup WhatsApp 1 (DINZXX MAIN SQUAD)</label>
+                    <input type="text" id="editWaGroup1" placeholder="https://chat.whatsapp.com/xxxx">
+                </div>
+                <div class="input-group">
+                    <label>🔗 Link Grup WhatsApp 2 (CH & GB STORE UPDATE)</label>
+                    <input type="text" id="editWaGroup2" placeholder="https://chat.whatsapp.com/xxxx">
+                </div>
+                <div class="input-group">
+                    <label>📢 Link Saluran 1 (DINZXX OFFICIAL CH)</label>
+                    <input type="text" id="editChannel1" placeholder="https://whatsapp.com/channel/xxxx">
+                </div>
+                <div class="input-group">
+                    <label>⚡ Link Saluran 2 (GB STORE PREMIUM)</label>
+                    <input type="text" id="editChannel2" placeholder="https://whatsapp.com/channel/xxxx">
+                </div>
+                <button class="save-link-btn" id="saveAllLinksBtn">💾 Simpan Semua Link & Update Tampilan</button>
+                <p style="font-size: 0.65rem; margin-top: 10px; color:#6c8e7e;">✍️ Edit link diatas lalu klik simpan. Semua tombol & copy otomatis berubah.</p>
+            </div>
+        </div>
+
+        <!-- Bagian GROUP WHATSAPP -->
+        <div class="section-title">
+            <span>💬</span> <span>Grup WhatsApp</span>
+        </div>
+
+        <!-- Grup 1 -->
+        <div class="link-card" id="waGroup1Card">
+            <div class="link-info">
+                <div class="icon-bg">👥</div>
+                <div class="link-detail">
+                    <h3>DINZXX MAIN SQUAD</h3>
+                    <p>Diskusi, info event, & kolaborasi</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="copy-btn" id="copyWa1Btn" title="Salin link grup">📋</button>
+                <a href="#" class="btn-join" id="joinWa1Btn" target="_blank" rel="noopener noreferrer">📲 Gabung Grup</a>
+            </div>
+        </div>
+
+        <!-- Grup 2 -->
+        <div class="link-card" id="waGroup2Card">
+            <div class="link-info">
+                <div class="icon-bg">🎮</div>
+                <div class="link-detail">
+                    <h3>CH & GB STORE UPDATE</h3>
+                    <p>Info stok, promo, & grup diskusi seller</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="copy-btn" id="copyWa2Btn" title="Salin link grup">📋</button>
+                <a href="#" class="btn-join" id="joinWa2Btn" target="_blank" rel="noopener noreferrer">📲 Gabung Grup</a>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <span>📡</span> <span>Saluran / Channel WhatsApp</span>
+        </div>
+
+        <!-- Channel 1 -->
+        <div class="link-card" id="channel1Card">
+            <div class="link-info">
+                <div class="icon-bg">📢</div>
+                <div class="link-detail">
+                    <h3>DINZXX OFFICIAL CH</h3>
+                    <p>Pengumuman, giveaway, info terbaru</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="copy-btn" id="copyCh1Btn" title="Salin link saluran">📋</button>
+                <a href="#" class="btn-follow" id="followCh1Btn" target="_blank" rel="noopener noreferrer">🔔 Ikuti Saluran</a>
+            </div>
+        </div>
+
+        <!-- Channel 2 -->
+        <div class="link-card" id="channel2Card">
+            <div class="link-info">
+                <div class="icon-bg">⚡</div>
+                <div class="link-detail">
+                    <h3>GB STORE PREMIUM</h3>
+                    <p>Update produk GB, CH, rekomendasi harian</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="copy-btn" id="copyCh2Btn" title="Salin link saluran">📋</button>
+                <a href="#" class="btn-follow" id="followCh2Btn" target="_blank" rel="noopener noreferrer">🔔 Ikuti Saluran</a>
+            </div>
+        </div>
+
+        <div class="footer-note">
+            🛡️ Owner dapat mengubah semua link kapan saja melalui panel diatas.<br>
+            Klik "Ubah Link", edit URL, lalu simpan. Semua tombol akses dan salin otomatis terupdate.
+        </div>
+    </div>
+</div>
+
+<div id="globalToast" class="toast-custom">✅ Tersalin!</div>
+
+<script>
+    // ---------- STORAGE KEY & DEFAULT LINKS (Contoh / bisa diubah owner) ----------
+    const STORAGE_KEY = 'dinzxx_all_links_v1';
+
+    // Default links (bisa diedit oleh owner, setelah itu tersimpan di localStorage)
+    const defaultLinks = {
+        waGroup1: 'https://chat.whatsapp.com/KUw9JfR3vLcE2qXpD5nA1m',
+        waGroup2: 'https://chat.whatsapp.com/B7vXyZ3mQpLk9WjRtYuI2o',
+        channel1: 'https://whatsapp.com/channel/0029VaABCDinzzXStoreOfficial',
+        channel2: 'https://whatsapp.com/channel/0029VaEFGHstoreGBCHPremium'
+    };
+
+    // Load data dari localStorage atau default
+    let currentLinks = { ...defaultLinks };
+
+    function loadLinksFromStorage() {
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+            try {
+                const parsed = JSON.parse(stored);
+                // merge dengan default jika ada field kurang
+                currentLinks = { ...defaultLinks, ...parsed };
+            } catch(e) { console.warn(e); }
+        } else {
+            currentLinks = { ...defaultLinks };
+        }
+    }
+
+    function saveLinksToStorage() {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(currentLinks));
+    }
+
+    // Update semua UI (tombol akses, href, dll)
+    function updateAllUI() {
+        // Update Grup WA 1
+        const joinBtn1 = document.getElementById('joinWa1Btn');
+        if (joinBtn1) joinBtn1.href = currentLinks.waGroup1;
+        
+        // Update Grup WA 2
+        const joinBtn2 = document.getElementById('joinWa2Btn');
+        if (joinBtn2) joinBtn2.href = currentLinks.waGroup2;
+        
+        // Update Channel 1
+        const followBtn1 = document.getElementById('followCh1Btn');
+        if (followBtn1) followBtn1.href = currentLinks.channel1;
+        
+        // Update Channel 2
+        const followBtn2 = document.getElementById('followCh2Btn');
+        if (followBtn2) followBtn2.href = currentLinks.channel2;
+        
+        // Juga update value di input form edit agar sesuai dengan data terbaru
+        const inputWa1 = document.getElementById('editWaGroup1');
+        const inputWa2 = document.getElementById('editWaGroup2');
+        const inputCh1 = document.getElementById('editChannel1');
+        const inputCh2 = document.getElementById('editChannel2');
+        if (inputWa1) inputWa1.value = currentLinks.waGroup1;
+        if (inputWa2) inputWa2.value = currentLinks.waGroup2;
+        if (inputCh1) inputCh1.value = currentLinks.channel1;
+        if (inputCh2) inputCh2.value = currentLinks.channel2;
+        
+        // Update atribut data-copy untuk tombol copy secara dinamis
+        // (supaya copy mengambil link terkini)
+        const copyWa1 = document.getElementById('copyWa1Btn');
+        const copyWa2 = document.getElementById('copyWa2Btn');
+        const copyCh1 = document.getElementById('copyCh1Btn');
+        const copyCh2 = document.getElementById('copyCh2Btn');
+        
+        if (copyWa1) copyWa1.setAttribute('data-clipboard', currentLinks.waGroup1);
+        if (copyWa2) copyWa2.setAttribute('data-clipboard', currentLinks.waGroup2);
+        if (copyCh1) copyCh1.setAttribute('data-clipboard', currentLinks.channel1);
+        if (copyCh2) copyCh2.setAttribute('data-clipboard', currentLinks.channel2);
+    }
+    
+    // Fungsi simpan dari panel owner
+    function saveLinksFromPanel() {
+        const newWa1 = document.getElementById('editWaGroup1').value.trim();
+        const newWa2 = document.getElementById('editWaGroup2').value.trim();
+        const newCh1 = document.getElementById('editChannel1').value.trim();
+        const newCh2 = document.getElementById('editChannel2').value.trim();
+        
+        if (newWa1 === "" || newWa2 === "" || newCh1 === "" || newCh2 === "") {
+            showToastMessage("⚠️ Semua link harus diisi!", 1800);
+            return;
+        }
+        
+        // validasi sederhana untuk format link (opsional)
+        if (!newWa1.startsWith('https://chat.whatsapp.com/') && !newWa1.startsWith('http')) {
+            // hanya peringatan lembut
+            if(!confirm("Link grup 1 terlihat tidak standar WhatsApp. Lanjutkan?")) return;
+        }
+        
+        currentLinks.waGroup1 = newWa1;
+        currentLinks.waGroup2 = newWa2;
+        currentLinks.channel1 = newCh1;
+        currentLinks.channel2 = newCh2;
+        
+        saveLinksToStorage();
+        updateAllUI();
+        showToastMessage("✅ Semua link berhasil diperbarui!", 1500);
+        
+        // opsional: tutup panel edit setelah simpan (opsi dinamis)
+        const editPanel = document.getElementById('editFieldsContainer');
+        if(editPanel && editPanel.classList.contains('show-edit')) {
+            // jika ingin tetap terbuka atau tertutup, terserah. biarkan saja terbuka agar bisa lihat hasil.
+        }
+    }
+    
+    // Toast
+    let toastTimeout = null;
+    function showToastMessage(message, duration = 2000) {
+        const toastEl = document.getElementById('globalToast');
+        if (!toastEl) return;
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastEl.textContent = message;
+        toastEl.classList.add('show');
+        toastTimeout = setTimeout(() => {
+            toastEl.classList.remove('show');
+        }, duration);
+    }
+    
+    // Copy handler dengan clipboard
+    async function copyLinkToClipboard(link, typeName = 'Link') {
+        if (!link) {
+            showToastMessage("❌ Link kosong, hubungi owner", 1500);
+            return;
+        }
+        try {
+            await navigator.clipboard.writeText(link);
+            showToastMessage(`📋 ${typeName} berhasil disalin!`, 1500);
+        } catch (err) {
+            // fallback
+            const textArea = document.createElement('textarea');
+            textArea.value = link;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            showToastMessage(`📋 ${typeName} disalin (manual)`, 1500);
+        }
+    }
+    
+    // Inisialisasi event listener untuk tombol copy dan tambahan
+    function bindCopyEvents() {
+        const copyWa1 = document.getElementById('copyWa1Btn');
+        const copyWa2 = document.getElementById('copyWa2Btn');
+        const copyCh1 = document.getElementById('copyCh1Btn');
+        const copyCh2 = document.getElementById('copyCh2Btn');
+        
+        if (copyWa1) {
+            copyWa1.addEventListener('click', (e) => {
+                e.preventDefault();
+                const link = currentLinks.waGroup1;
+                copyLinkToClipboard(link, 'Grup WA 1');
+            });
+        }
+        if (copyWa2) {
+            copyWa2.addEventListener('click', (e) => {
+                e.preventDefault();
+                copyLinkToClipboard(currentLinks.waGroup2, 'Grup WA 2');
+            });
+        }
+        if (copyCh1) {
+            copyCh1.addEventListener('click', (e) => {
+                e.preventDefault();
+                copyLinkToClipboard(currentLinks.channel1, 'Saluran Official');
+            });
+        }
+        if (copyCh2) {
+            copyCh2.addEventListener('click', (e) => {
+                e.preventDefault();
+                copyLinkToClipboard(currentLinks.channel2, 'Saluran GB Premium');
+            });
+        }
+        
+        // tambahan safety untuk tombol join / follow yang mungkin kosong (akan redirect tapi jika # akan dicegah)
+        const allJoinBtns = [document.getElementById('joinWa1Btn'), document.getElementById('joinWa2Btn'), 
+                              document.getElementById('followCh1Btn'), document.getElementById('followCh2Btn')];
+        allJoinBtns.forEach(btn => {
+            if(btn) {
+                btn.addEventListener('click', (e) => {
+                    if (!btn.href || btn.href === '#' || btn.href === window.location.href + '#') {
+                        e.preventDefault();
+                        showToastMessage("⚠️ Link belum diatur oleh Owner. Gunakan panel edit.", 1800);
+                    }
+                });
+            }
+        });
+    }
+    
+    // Toggle panel edit
+    function initToggleEdit() {
+        const toggleBtn = document.getElementById('toggleEditBtn');
+        const editContainer = document.getElementById('editFieldsContainer');
+        if (toggleBtn && editContainer) {
+            toggleBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                editContainer.classList.toggle('show-edit');
+                // update text tombol
+                if (editContainer.classList.contains('show-edit')) {
+                    toggleBtn.innerHTML = '🔒 Tutup Panel';
+                } else {
+                    toggleBtn.innerHTML = '✏️ Ubah Link';
+                }
+            });
+        }
+        // Simpan tombol
+        const saveBtn = document.getElementById('saveAllLinksBtn');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', () => {
+                saveLinksFromPanel();
+            });
+        }
+    }
+    
+    // Cek jika ada link kosong defensif, beri default sementara
+    function ensureNoEmptyLinks() {
+        if (!currentLinks.waGroup1) currentLinks.waGroup1 = defaultLinks.waGroup1;
+        if (!currentLinks.waGroup2) currentLinks.waGroup2 = defaultLinks.waGroup2;
+        if (!currentLinks.channel1) currentLinks.channel1 = defaultLinks.channel1;
+        if (!currentLinks.channel2) currentLinks.channel2 = defaultLinks.channel2;
+        saveLinksToStorage();
+    }
+    
+    // Inisialisasi halaman
+    function init() {
+        loadLinksFromStorage();
+        ensureNoEmptyLinks();
+        updateAllUI();
+        bindCopyEvents();
+        initToggleEdit();
+        // Jika suatu saat user refresh, tetap pakai link tersimpan
+        console.log('ALL GB/CH DINZXX STORE — Web siap, owner bisa ubah link kapan saja.');
+    }
+    
+    init();
+</script>
+</body>
+</html>
